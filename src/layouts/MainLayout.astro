@@ -1,6 +1,8 @@
 ---
 import { Image } from "astro:assets";
 import logo from "../images/logo.png";
+
+const { title = '' } = Astro.props;
 ---
 
 <!doctype html>
@@ -13,7 +15,7 @@ import logo from "../images/logo.png";
       integrity="sha512-BJ/5sR2hFxQTKin/55JQCcMTObShDBAmVjL/3NR/MVcrhyOazJjAgvROem03+HYyGw16SVdSfoWCFGr9syxAKA=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"></script>
-    <title>Tech People Blog</title>
+    <title>{title}</title>
   </head>
   <body class="">
     <nav class="bg-gray-900 text-white">
